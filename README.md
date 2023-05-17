@@ -23,7 +23,7 @@ Usamos o RequestDispatcher para chamar um JSP a partir da servlet
 Obtemos o RequestDispatcher a partir do HttpServletRequest
 Usamos a requisição para colocar ou pegar um atributo (setAttribute(.., ..) ou getAttribute(..))
   
-  ```
+  ```ruby
   protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     //COm esse codigo consigo recolher a string que foi escrita no html
     var nomeEmpresa = request.getParameter("nome");
