@@ -24,7 +24,7 @@
 	  resp.println("<html><body>Empresa "+nomeEmpresa+" cadastrada com sucesso!</body></html>");
   
   
-  	// chamar o JSP
+  	// chamar o JSP (Java Server Pages)
 		var rd = request.getRequestDispatcher("/imprimirlista.jsp");
   
 		//colocar na requistição, o que deseja enviar, nesse caso o nome da empresa e como o JSP vai receber
