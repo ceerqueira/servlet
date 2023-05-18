@@ -65,9 +65,11 @@ JSTL (Java Standard Tag Library):
 	
 	
 core - controle de fluxo
+	
 ```ruby<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c"%>```
 	
 fmt - formatação / i18n (internacionalização)
+	
 ```ruby<%@ taglib uri = "http://java.sun.com/jsp/jstl/fmt" prefix = "fmt"%>```
 	
 Exemplo no jsp:
