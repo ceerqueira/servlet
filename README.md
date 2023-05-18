@@ -73,6 +73,7 @@ fmt - formatação / i18n (internacionalização)
 ```ruby<%@ taglib uri = "http://java.sun.com/jsp/jstl/fmt" prefix = "fmt"%>```
 	
 **Exemplo no jsp:**
+
 ```ruby
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
@@ -91,8 +92,8 @@ pageEncoding="UTF-8"%>
 		</c:forEach>
 	</ul>
 </body>
-</html>```
-	
+</html>
+```
 
 **Ou usando Scriplet no jsp:**
 ```ruby
