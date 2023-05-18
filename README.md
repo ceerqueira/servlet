@@ -57,13 +57,13 @@
 Utilização da biblioteca JSTL (JavaServer Pages Standard Tag Library) no JSP(Java Server Pages) deixa o html mais limpo
 	
 	
-JSTL (Java Standard Tag Library)
-core - controle de fluxo
-fmt - formatação / i18n (internacionalização) sql - executar SQL
-xml - gerar XML
+JSTL (Java Standard Tag Library):
+ - core - controle de fluxo
+ - fmt - formatação / i18n (internacionalização) 
+ - sql - executar SQL
+ - xml - gerar XML
 	
 	
-	JSTL (Java Standard Tag Library)
 core - controle de fluxo
 ```ruby<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c"%>```
 	
