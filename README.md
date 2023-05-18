@@ -57,14 +57,14 @@
 Utilização da biblioteca JSTL (JavaServer Pages Standard Tag Library) no JSP(Java Server Pages) deixa o html mais limpo
 	
 	
-JSTL (Java Standard Tag Library):
+**JSTL (Java Standard Tag Library):**
  - core - controle de fluxo
  - fmt - formatação / i18n (internacionalização) 
  - sql - executar SQL
  - xml - gerar XML
 	
 	
-core - controle de fluxo
+core - controle de fluxo:
 	
 ```ruby<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c"%>```
 	
@@ -72,7 +72,7 @@ fmt - formatação / i18n (internacionalização)
 	
 ```ruby<%@ taglib uri = "http://java.sun.com/jsp/jstl/fmt" prefix = "fmt"%>```
 	
-Exemplo no jsp:
+**Exemplo no jsp:**
 ```ruby
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
@@ -92,3 +92,9 @@ pageEncoding="UTF-8"%>
 	</ul>
 </body>
 </html>```
+	
+**Ou usando Scriplet no jsp:**
+```ruby
+<%@ page import = "java.util.List, br.com.servlet.*"  %>
+<% List<Empresa> listaEmpresas = (List<Empresa>)request.getAttribute("lista"); %>
+```
