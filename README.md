@@ -93,6 +93,7 @@ pageEncoding="UTF-8"%>
 </body>
 </html>```
 	
+
 **Ou usando Scriplet no jsp:**
 ```ruby
 <%@ page import = "java.util.List, br.com.servlet.*"  %>
