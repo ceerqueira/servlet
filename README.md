@@ -36,7 +36,7 @@
 		
 
 		colocar na requistição, o que deseja enviar, nesse caso o nome da empresa e como o JSP vai receber
-		request.setAttribute("lista", listaEmpresas);
+		request.setAttribute("empresa", listaEmpresas);
 	
 		chamar o JSP (Java Server Pages) e dizer para onde vai esse "Pacote"
 		var rd = request.getRequestDispatcher("/imprimirLista.jsp"); 
@@ -53,3 +53,39 @@
   A requisição chega no Servlet, através da requisição http
   fica tbm o codigo java
   usamos o dispacher da requisição para chamar o JSP
+
+Utilização da biblioteca JSTL (JavaServer Pages Standard Tag Library) no JSP(Java Server Pages) deixa o html mais limpo
+	
+	
+JSTL (Java Standard Tag Library)
+core - controle de fluxo
+fmt - formatação / i18n (internacionalização) sql - executar SQL
+xml - gerar XML
+	
+	
+	JSTL (Java Standard Tag Library)
+core - controle de fluxo
+```ruby<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c"%>```
+fmt - formatação / i18n (internacionalização)
+```ruby<%@ taglib uri = "http://java.sun.com/jsp/jstl/fmt" prefix = "fmt"%>```
+	
+Exemplo no jsp:
+```ruby
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Imprmir Lista de Empresa</title>
+</head>
+<body>
+	<h5>Lista de Empresas:</h5>
+	<ul>
+		<c:forEach items ="${empresas}" var ="empresa">
+			<li>${empresa.nome}</li>
+		</c:forEach>
+	</ul>
+</body>
+</html>```
